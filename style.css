@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  background: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 13px;
+}
+
+.navbar-overlay{
+  display:none;
+}
+
+.container{
+  max-width:80%;
+  margin: 30px auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h3{
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+nav .navbar{
+  list-style-type: none;
+  display: flex;
+}
+
+.hamburger{
+  display: none;
+}
+
+nav .navbar li a{
+  text-decoration: none;
+  margin: 30px 0 20px 100px;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+nav .navbar li a:hover{
+  background:#333;
+  border-radius: 5px;
+}
+
+.main-section{
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.description{
+  width:40%;
+}
+
+.description h1{
+  font-size: 4.5rem;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.description p{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.image {
+  width:50%;
+  position: relative;
+}
+
+.image .img-div img{
+  width: 100%;
+  height: 500px;
+}
+
+.consultant-card{
+  display: flex;
+  flex-direction: column;
+  background:rgb(0, 0, 0);
+  position: absolute;
+  top:90%;
+  left: 45%;
+  padding: 30px 60px 40px 60px;
+}
+
+.consultant{
+  display: flex;
+}
+.consultant .profile-pic img{
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 25px;
+}
+
+.consultant .name{
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.consultant .job{
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.consultant-card .consultant-description{
+  font-size: 1.5rem;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.description i{
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width:1445px){
+  .container{
+    max-width:90%;
+  }
+
+  .consultant-card{
+    left: 35%;
+  }
+
+  .image .img-div img{
+  width: 100%;
+}
+}
+
+@media screen and (max-width:1100px){
+  .container{
+    max-width:80%;
+    margin: 30px auto;
+  }
+  
+  .main-section{
+    width:100%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  .consultant-card{
+    left: 15%;
+  }
+
+  .hamburger{
+    /* display: block; */
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  nav .navbar li a{
+    margin-left: 10px;
+  }
+
+  .description{
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  .footer{
+    margin-top: 160px;
+  }
+
+  .consultant-card{
+    left: 10%;
+    padding: 10px 30px 20px 30px;
+  }
+
+  .description h1{
+    font-size: 2.5rem;
+    margin-top: 30px;
+  }
+  
+  .description p{
+    font-size: 1.25rem;
+  }
+
+  .image .img-div img{
+    width: 100%;
+    height: 300px;
+  }
+
+  .image{
+    width:100%;
+  }
+
+  .overlay{
+    display:none;
+    background:rgb(54, 47, 47);
+    height:100vh;
+    width:100vw;
+    top:00;
+    left:0;
+    z-index: 100;
+    position: fixed;
+  }
+  .navbar-overlay{
+    position: absolute;
+    top:25%;
+    left:25%;
+    height:50vh;
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    background:rgb(54, 47, 47);
+  }
+
+  .navbar-overlay li,
+  .navbar-overlay a {
+    background:rgb(54, 47, 47);
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2rem;
+    margin:20px;
+  }
+}
+  @media screen and (max-width:700px){
+    nav .navbar{
+      display: none;
+   }
+
+   .navbar-overlay{
+     position: absolute;
+     top:25%;
+     left:25%;
+     height:50vh;
+     width:50vw;
+     display:flex;
+     flex-direction: column;
+     background:rgb(54, 47, 47);
+   }
+ 
+   .navbar-overlay li,
+   .navbar-overlay a {
+     background:rgb(54, 47, 47);
+     text-decoration: none;
+     list-style-type: none;
+     font-size: 2rem;
+     margin:20px;
+   }
+ 
+   .hamburger{
+     display: block;
+     border:none;
+     outline:none;
+     cursor: pointer;
+     font-size: 2rem;
+   }
+  }
+   
